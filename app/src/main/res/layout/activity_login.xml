@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.Login"
+    android:background="@drawable/loginpho"
+    android:fitsSystemWindows="true">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/madre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true">
+
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_SingIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/madre1"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:drawableTint="#00F00404"
+            android:ems="10"
+            android:filterTouchesWhenObscured="false"
+            android:foregroundTint="#00EE0909"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:outlineSpotShadowColor="@color/white"
+            android:shadowColor="#00F80F0F"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_SingIn"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="@string/SingIn"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tv_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/madre1" />
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="166dp"
+        android:autoLink="none"
+        android:autofillHints=""
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/SingUp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/btn_SingIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_SingIn"
+        tools:targetApi="o" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnQr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_rounded_border"
+        android:src="@drawable/ic_scanner_camera_black"
+        app:backgroundTint="@color/fulltransparent"
+        app:borderWidth="5dp"
+        app:fabCustomSize="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

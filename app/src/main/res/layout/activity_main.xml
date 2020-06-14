@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="317dp"
+        android:layout_height="281dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/madre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:passwordToggleEnabled="true">
+
+
+        <EditText
+
+            android:id="@+id/editText3"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_SingIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/madre1"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:drawableTint="#00F00404"
+            android:ems="10"
+            android:filterTouchesWhenObscured="false"
+            android:foregroundTint="#00EE0909"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:outlineSpotShadowColor="@color/black"
+            android:shadowColor="#00F80F0F"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_SingIn"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="@string/SingIn"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/id_Tv_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/madre1" />
+
+
+    <TextView
+        android:id="@+id/id_Tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="166dp"
+        android:autoLink="none"
+        android:autofillHints=""
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/SingUp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_SingIn"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/id_Tv_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="166dp"
+        android:autoLink="none"
+        android:autofillHints=""
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/forgot"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_SingIn"
+        tools:targetApi="o" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

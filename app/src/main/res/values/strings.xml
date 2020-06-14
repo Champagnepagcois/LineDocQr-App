@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">OneClickQr</string>
+
+
+    <string name="salir">Logout</string>
+    <string name="settings">settings</string>
+    <string name="scanner">Scanner</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="aceptar">Aceptar</string>
+
+    <string name="nueroValido">Introduce un numero valido</string>
+    <string name="hecho">Hecho</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hola">hola11111</string>
+    <string name="drawerOpen">open</string>
+    <string name="drawereClose">close</string>
+    <string name="drawerClose">close</string>
+    <string name="profile">Perfil</string>
+    <string name="gender">gender</string>
+    <string name="name">Name</string>
+    <string name="surnae">Surname</string>
+    <string name="numer">Phone</string>
+    <string name="username">Username</string>
+    <string name="otro">Something</string>
+    <string name="fechaNacimiento">Fecha de nacimiento</string>
+    <string name="home">Home</string>
+    <string name="center">Center</string>
+    <string name="search">Search</string>
+    <string name="Repassword">Repetir password</string>
+    <string name="codephone">   Introduce el codigo que fue enviado al: </string>
+    <string name="code">Codigo</string>
+    <string name="dontRecivido">No recibi nungun codigo</string>
+    <string name="forgot">Olvide contraseña</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="correo">Correo</string>
+    <string name="password">Password</string>
+    <string name="SingIn">Signin</string>
+    <string name="SingUp">SingUp</string>
+</resources>
