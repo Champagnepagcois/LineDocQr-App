@@ -37,4 +37,5 @@
     <string name="password">Password</string>
     <string name="SingIn">Signin</string>
     <string name="SingUp">SingUp</string>
+    <string name="saveqr">Guardar codigo QR</string>
 </resources>

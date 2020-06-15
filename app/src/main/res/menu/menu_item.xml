@@ -32,7 +32,7 @@
                 android:icon="@drawable/ic_settings"/>
 
             <item
-                android:id="@+id/salir"
+                android:id="@+id/logout"
                 android:title="@string/salir"
                 android:icon="@drawable/ic_exit_to_app_black"/>
 

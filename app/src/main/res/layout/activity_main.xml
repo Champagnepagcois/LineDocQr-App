@@ -1,36 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="317dp"
-        android:layout_height="281dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splash" />
+    tools:context=".MainActivity"
+    android:background="@drawable/loginpho"
+    android:fitsSystemWindows="true">
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/madre1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="550dp"
         android:textColorHint="@color/black"
         app:boxStrokeColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
         app:passwordToggleEnabled="true">
 
 
@@ -66,7 +56,6 @@
         app:passwordToggleEnabled="true">
 
         <EditText
-
             android:layout_width="300dp"
             android:layout_height="42dp"
             android:layout_gravity="center"
@@ -92,53 +81,27 @@
         android:layout_marginStart="72dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="72dp"
-        android:layout_marginBottom="25dp"
         android:background="@drawable/button_rounded_border"
         android:text="@string/SingIn"
         android:textColor="@color/black"
         android:textColorLink="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/id_Tv_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/madre1" />
 
-
-    <TextView
-        android:id="@+id/id_Tv_register"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnQr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="166dp"
-        android:autoLink="none"
-        android:autofillHints=""
-        android:clickable="true"
-        android:focusable="true"
-        android:text="@string/SingUp"
-        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_rounded_border"
+        android:src="@drawable/ic_scanner_camera_black"
+        app:backgroundTint="@color/fulltransparent"
+        app:borderWidth="5dp"
+        app:fabCustomSize="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_SingIn"
-        tools:targetApi="o" />
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/id_Tv_forgot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="166dp"
-        android:autoLink="none"
-        android:autofillHints=""
-        android:clickable="true"
-        android:focusable="true"
-        android:text="@string/forgot"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_SingIn"
-        tools:targetApi="o" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        textViewRe = (TextView) findViewById(R.id.id_Tv_register);
+    }
+       /* textViewRe = (TextView) findViewById(R.id.id_Tv_register);
         textViewFo = (TextView) findViewById(R.id.id_Tv_forgot);
         buttonLogin = (Button) findViewById(R.id.btn_SingIn);
 
@@ -52,5 +52,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(Login);
             }
         });
-    }
+    }*/
 }
