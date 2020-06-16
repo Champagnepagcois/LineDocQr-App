@@ -19,8 +19,8 @@
     <string name="profile">Perfil</string>
     <string name="gender">gender</string>
     <string name="name">Name</string>
-    <string name="surnae">Surname</string>
-    <string name="numer">Phone</string>
+    <string name="surname_p">Apellido Paterno</string>
+    <string name="numero">Numero</string>
     <string name="username">Username</string>
     <string name="otro">Something</string>
     <string name="fechaNacimiento">Fecha de nacimiento</string>
@@ -37,5 +37,8 @@
     <string name="password">Password</string>
     <string name="SingIn">Signin</string>
     <string name="SingUp">SingUp</string>
+    <string name="sangre">Sangre</string>
+    <string name="curp">CURP</string>
+    <string name="surname_m">Apellido materno</string>
     <string name="saveqr">Guardar codigo QR</string>
 </resources>

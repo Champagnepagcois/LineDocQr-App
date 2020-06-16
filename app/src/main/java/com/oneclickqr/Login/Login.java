@@ -42,23 +42,18 @@ public class Login extends AppCompatActivity {
     private FloatingActionButton btnflo;
     private Button btnInto;
     private EditText username,pass;
-    String corr = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         /*bloquea el giro de pantalla*/
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-       /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            Window w = getWindow();
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }*/
-        setContentView(R.layout.activity_login);
+       setContentView(R.layout.activity_login);
         username = (EditText) findViewById(R.id.ET_email);
-        corr = username.getText().toString();
         pass = (EditText) findViewById(R.id.ETpassword);
 
-                btnInto = (Button) findViewById(R.id.btn_SingIn);
+        btnInto = (Button) findViewById(R.id.btn_SingIn);
         btnInto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,7 +93,6 @@ public class Login extends AppCompatActivity {
                 String uno = "1";
 
                 if (suc.equals(uno)){
-
                     AccFil();
                 } else {
                     Toast.makeText(getApplicationContext(), "Fail",Toast.LENGTH_LONG).show();
@@ -134,12 +128,8 @@ public class Login extends AppCompatActivity {
 
     public void AccFil(){
 
-        Bundle bundle =  new Bundle();
-        bundle.putString("correo", corr);
-        HomeFragment myFragment = new HomeFragment();
-        myFragment.setArguments(bundle);
-
         Intent into = new Intent(Login.this, Into.class);
+        into.putExtra("correo",username.getText().toString());
         startActivity(into);
         Login.this.finish();
     }

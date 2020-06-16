@@ -54,6 +54,9 @@
 
         <EditText
             android:id="@+id/ETpassword"
+            android:textColorHighlight="@color/transparenteblanco"
+            android:textColorLink="@color/black"
+            android:textCursorDrawable="@color/black"
             android:layout_width="300dp"
             android:layout_height="42dp"
             android:layout_gravity="center"
