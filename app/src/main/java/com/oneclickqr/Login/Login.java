@@ -95,7 +95,7 @@ public class Login extends AppCompatActivity {
                 if (suc.equals(uno)){
                     AccFil();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Fail",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Ingresa bien los datos",Toast.LENGTH_LONG).show();
                 }
             }
         }, new Response.ErrorListener() {

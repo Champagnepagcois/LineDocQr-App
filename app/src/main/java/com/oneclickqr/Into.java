@@ -116,18 +116,13 @@ public class Into extends AppCompatActivity  implements NavigationView.OnNavigat
             public void onResponse(String response) {
                     Log.e(Into.class.getSimpleName(),"Respuesta del servidor"+ response.toString());
                     String ress = response.toString();
-                    String name = "";
-                    String surnamep = "";
-                    String surnamem = "";
-
 
                     if (ress !=null){
 
-
-                        //Aqui se tiene que pasar el dato fer
-
-                        String na = ress.substring(2,11);
-                        Toast.makeText(getApplicationContext(),na,Toast.LENGTH_LONG).show();
+                        Bundle args = new Bundle();
+                        args.putString( "textFrom", ress);
+                        HomeFragment newFragment = new HomeFragment();
+                        newFragment.setArguments(args);
 
                     }else {
                         Log.e(Into.class.getSimpleName(), "No tiene datos registrados");
@@ -145,7 +140,7 @@ public class Into extends AppCompatActivity  implements NavigationView.OnNavigat
 
 
                     String res = response.toString();
-                    Toast.makeText(getApplicationContext(),res,Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(),res,Toast.LENGTH_LONG).show();
 
             }
         }, new Response.ErrorListener() {
